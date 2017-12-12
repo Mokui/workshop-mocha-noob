@@ -5,3 +5,13 @@ exports.getPrices = () => {
 exports.countArticles = (array) => {
   return array.length;
 }
+
+exports.countProducts = (array) => {
+  var tab = [];
+  array.forEach((element) => {
+    if(!(tab.includes(element))) {
+      tab.push(element);
+    }
+  });
+  return tab.length;
+}
